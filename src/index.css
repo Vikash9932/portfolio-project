@@ -11,3 +11,171 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* MAIN */
+.mine {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+}
+
+.mine__image {
+  flex: 3;
+}
+
+.mine__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.mine__options {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+}
+
+.mine__options__myinfo {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(50, 49, 49);
+}
+
+.mine__options__myinfo__name {
+  flex: 5;
+  font-size: 3.2rem;
+  text-align: center;
+  color: white;
+}
+
+.mine__options__myinfo__social {
+  flex: 5;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+.mine__options__myinfo__social a {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.mine__options__designation {
+  font-size: 1.4rem;
+  flex: 2;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.mine__options__nav {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+}
+
+.mine__options__nav a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.mine__options__nav a:nth-child(1) {
+  background-color: rgb(69, 115, 242);
+}
+.mine__options__nav a:nth-child(2) {
+  background-color: green;
+}
+.mine__options__nav a:nth-child(3) {
+  background-color: rgba(208, 195, 11, 0.959);
+}
+.mine__options__nav a:nth-child(4) {
+  background-color: rgb(232, 76, 19);
+}
+
+/* HOME PAGE */
+.home {
+}
+
+.home__heading {
+  background-color: rgb(69, 115, 242);
+  height: 150px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.home__heading--main {
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.home__heading--subheading {
+}
+
+.home__skills {
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+
+.home__skills__heading {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home__skills__heading--main {
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.home__skills__heading--subheading {
+}
+
+.home__skills--line {
+}
+
+.home__skills__all {
+}
+
+.home__skills__all__each {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home__skills__all__each--heading {
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.home__skills__all__each--bar {
+  padding-right: 20px;
+}
+
+
+.home__skills__all__each--bar progress {
+  /* color: red; */
+  width: 100%;
+  background-color: red;
+}
