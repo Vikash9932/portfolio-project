@@ -14,11 +14,15 @@ const Home = () => {
         <div className="home__skills__heading--subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, corporis molestias omnis porro quas inventore!</div>
       </div>
       <div className="home__skills--line"><hr /></div>
-      <div className="home__skills_all">
-        {skills.map(skill => <div key={skill.name} className="home__skills__all__each">
-          <div className="home__skills__all__each--heading">{skill.name}</div>
-          <div className="home__skills__all__each--bar"><progress max="20" value={skill.progress} /></div>
-        </div>
+      <div className="home__skills__all">
+        {skills.map(skill =>
+          <div key={skill.name} className="home__skills__all__each">
+            <div className="home__skills__all__each__bar--heading">{skill.name}</div>
+            <div className="home__skills__all__each__bar--progress" >
+              <div className="home__skills__all__each__bar__progress--value" style={{ width: `${skill.progress}%` }}></div>
+            </div>
+            <span className="home__skills__all__each--progress">{skill.progress}%</span>
+          </div>
         )}
       </div>
     </div>
